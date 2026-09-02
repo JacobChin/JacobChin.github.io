@@ -1,4 +1,4 @@
-# Jacob Chin — Working Theory
+# Jacob Chin’s Blog
 
 Personal research blog by Jacob Chin, published with GitHub Pages.
 

@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<article class="article-shell">
+  <header class="article-hero">
+    <div class="article-hero-copy">
+      <p class="eyebrow"><span>Field note {{ page.note }}</span><span>{{ page.topics }}</span></p>
+      <h1>{{ page.title }}</h1>
+      <p class="dek">{{ page.description }}</p>
+      <div class="article-meta">
+        <span>By {{ page.author }}</span><span>{{ page.read_time }}</span><span>{{ page.display_date }}</span>
+      </div>
+    </div>
+    <figure class="motion-card" aria-labelledby="motion-caption">
+      <div class="motion-label"><span>Working model</span><span>Load → contact</span></div>
+      <div class="motion-plot" aria-hidden="true">
+        <span class="plot-phase phase-load">Load</span>
+        <span class="plot-phase phase-plant">Foot plant</span>
+        <span class="plot-phase phase-contact">Contact</span>
+        <svg viewBox="0 0 640 270" role="img">
+          <line class="grid-line" x1="255" y1="18" x2="255" y2="240" />
+          <line class="grid-line contact-grid" x1="555" y1="18" x2="555" y2="240" />
+          <path class="head-path" d="M25 205 C120 202 205 152 255 110 C320 64 390 67 468 72 C512 75 542 82 610 86" />
+          <path class="rotation-mark" d="M490 150 C520 116 568 112 596 143" />
+          <path class="rotation-arrow" d="M588 128 L598 144 L579 147" />
+          <circle class="phase-dot" cx="255" cy="110" r="7" />
+          <circle class="contact-dot" cx="555" cy="81" r="7" />
+        </svg>
+        <div class="plot-key"><span><i></i>Forward translation</span><span><i class="key-rotation"></i>Rotation continues</span></div>
+      </div>
+      <figcaption id="motion-caption">A testable idea: translation may accompany the load, then slow near front-foot contact while rotation continues.</figcaption>
+    </figure>
+    <a class="read-cue" href="#the-question">↓ Read the question</a>
+  </header>
+
+  <nav class="article-nav" aria-label="Article sections">
+    <span>In this note</span>
+    <a href="#the-question">Question</a>
+    <a href="#current-research">Research</a>
+    <a href="#a-better-study">Study</a>
+    <a href="#my-hypothesis">Hypothesis</a>
+    <a href="#conclusion">Conclusion</a>
+  </nav>
+
+  <div class="article-body">
+    {{ content }}
+  </div>
+</article>
+
+

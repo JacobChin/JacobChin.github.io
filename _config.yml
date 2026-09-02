@@ -1,0 +1,12 @@
+title: "Jacob Chin | Working Theory"
+description: "Independent analysis at the intersection of baseball, perception, biomechanics, and data."
+url: "https://jacobchin.github.io"
+baseurl: ""
+author:
+  name: "Jacob Chin"
+permalink: /articles/:title/
+markdown: kramdown
+exclude:
+  - README.md
+
+

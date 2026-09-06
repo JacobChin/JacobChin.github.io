@@ -57,8 +57,8 @@ Each of those events can serve as a starting point, but each answers a different
 - Hand onset provides a recognizable measure of bat delivery, but the lower body may have been rotating for a substantial period before it occurs.
 - Knob or handle onset gives an implement-based landmark. A knob-mounted sensor such as Blast Motion uses a proprietary “Transition Event” to calculate Time to Contact from the start of the downswing to impact. That is conceptually similar, although it does not represent the beginning of the whole-body action.
 - Barrel onset isolates the final delivery period but omits nearly everything that created it.
-- Electromyography could detect when relevant muscles become active, but preparatory muscle activity can also occur on pitches the hitter eventually takes.
-- Electroencephalography could identify neural activity associated with perception, response selection, and motor preparation, but it would provide a model-dependent decision proxy rather than one exact moment of conscious choice. Full-speed swinging would also introduce substantial movement and muscle artifact.
+- Electromyography (EMG) could detect when relevant muscles become active, but preparatory muscle activity can also occur on pitches the hitter eventually takes.
+- Electroencephalography (EEG) could identify neural activity associated with perception, response selection, and motor preparation, but it would provide a model-dependent decision proxy rather than one exact moment of conscious choice. Full-speed swinging would also introduce substantial movement and muscle artifact.
 
 Researchers have made different choices. In a study of 17 elite softball hitters facing randomly mixed fast and slow pitches, swing onset was defined from the velocity of one hand relative to the pelvis. The threshold was set at 10 percent of each hitter’s mean peak hand velocity to avoid classifying early fluctuations as the swing. A 2025 virtual-reality study of 23 professional players instead defined initiation as the point at which bat speed exceeded 4 meters per second, with additional criteria used to confirm that a swing followed.
 

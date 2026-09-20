@@ -1,4 +1,4 @@
-# Jacob Chin’s Blog
+# Jacob Chin’s Hitting Research Blog
 
 Personal research blog by Jacob Chin, published with GitHub Pages.
 

@@ -77,13 +77,8 @@ layout: default
     <span>In this note</span>
     <a href="#the-question">Question</a>
     <a href="#what-current-research-says">Research</a>
-    {% if page.hero == "swing-timing" %}
-    <a href="#the-theoretical-ideal-study">Ideal study</a>
-    <a href="#limitations">Limitations</a>
-    {% else %}
-    <a href="#theoretical-ideal-study">Ideal study</a>
-    <a href="#limitations">Limitations</a>
-    {% endif %}
+    <a href="#{{ page.ideal_study_anchor | default: 'theoretical-ideal-study' }}">Ideal study</a>
+    <a href="#{{ page.limitations_anchor | default: 'limitations' }}">Limitations</a>
     <a href="#my-hypothesis">Hypothesis</a>
     <a href="#conclusion">Conclusion</a>
   </nav>

@@ -1,23 +1,25 @@
 ---
 layout: post
 title: "Measuring Actual Time From Decision to Swing to Contact"
-description: "A research-based look at whether a shorter, more simultaneous swing can reach the ball sooner—even if it gives up some of the bat speed associated with a traditional kinetic sequence."
+description: "A research-based look at whether a shorter, more simultaneous—sometimes labeled 'pushy'—swing can reach the ball sooner, even if it gives up some bat speed."
 author: Jacob Chin
 note: "002"
 hero: swing-timing
 topics: "Baseball · Biomechanics · Perception"
-read_time: "22 min read"
+read_time: "27 min read"
 display_date: "September 2026"
 permalink: /articles/decision-to-contact/
 ---
 
 ## The Question
 
-A “quick swing” is one of the most familiar descriptions of a good baseball swing. It is also one of the least precisely measured.
+A “pushy swing” is one of the most familiar criticisms of a baseball swing. The label almost always carries a negative connotation—but is the movement pattern it describes always bad?
 
-Sometimes the phrase refers to a short-looking hand path. Sometimes it means high bat speed. Sometimes it describes a hitter who appears to wait longer before launching. More recently, Statcast has provided a direct measure of swing length: the total distance traveled by the barrel in three-dimensional space over the tracked portion of the swing.
+Coaches do not always use *pushy* to mean the same thing. It can describe the arms dominating while the rest of the body contributes poorly. It can refer to the hands moving away from the body or the barrel being forced prematurely toward the ball. It can also describe several body segments moving more nearly together instead of displaying a pronounced proximal-to-distal sequence. Those traits may overlap, but they are not the same mechanical problem.
 
-Those qualities are related, but they are not interchangeable.
+For this article, *pushier* is not a catch-all criticism. It has one narrow meaning: a more concurrent initiation pattern in which the pelvis, torso, lead arm, hands, handle, and barrel begin their forward contributions within a smaller window of time. It is a relative, continuous description—the smaller the spread among those onsets, the pushier the pattern—not a pass/fail label with one universal millisecond cutoff. It does not automatically mean arm-dominant, disconnected, slow, long, or ineffective. Barrel-path length, bat speed, connection, peak-velocity sequence, and performance remain separate measurements.
+
+That makes *pushiness* difficult to evaluate by appearance alone. Statcast now provides a direct measure of one part of the question: swing length, or the total distance traveled by the barrel in three-dimensional space over the tracked portion of the swing. But swing length, bat speed, segment timing, and total movement time are related without being interchangeable.
 
 A barrel can travel a short distance slowly. It can travel a longer distance quickly. Two hitters can produce the same bat speed at contact after taking different amounts of time to get there. A hitter can also begin moving the pelvis early, delay the torso and hands, and still deliver the barrel rapidly during the final portion of the swing.
 
@@ -36,7 +38,7 @@ Luis Arraez provides the contrasting visual reference. His swing often appears s
 That possibility matters because a shorter movement could allow the hitter to begin later and gather more information before launch. Hitters may continue processing and adjusting after movement begins, so this is a potential advantage rather than an automatic one.
 
 > **Working question**  
-> Can a shorter barrel path combined with more simultaneous segment movement reduce the total time from the first swing-producing movement to contact, even if the swing produces less bat speed than a more pronounced proximal-to-distal sequence?
+> Can a “pushier” onset pattern, when paired with a shorter barrel path, reduce the total time from the first swing-producing movement to contact—even if it produces less bat speed than a more pronounced proximal-to-distal sequence?
 
 This is not simply a question of contact hitting versus power hitting. It is a question of what each movement strategy buys and what it costs.
 
@@ -87,6 +89,8 @@ The word *qualifying* is important. A bat waggle, a small balance correction, or
 Composite swing time would not reveal when the hitter consciously decided to swing. Some early movement may occur while the hitter is still gathering information and preserving the option to stop. Instead, the measure would answer a narrower question: how much time elapsed between the first observable movement contributing to the forward swing and contact?
 
 The individual timestamps would remain valuable. The interval between the first and last segment onsets would describe **initiation spread**. A smaller spread would represent a more simultaneous initiation pattern. A larger spread would represent a more extended progression from the earliest segment to the latest.
+
+For this study, initiation spread would be the quantitative definition of *pushiness*. A smaller value would indicate a pushier onset pattern. The measure would be analyzed continuously and primarily within the same hitter rather than used to sort every hitter around one arbitrary cutoff. This would be a timing classification, not a visual judgment about whether the hitter is using only his arms, casting the barrel, or moving inefficiently.
 
 Peak-velocity order would be measured separately. Beginning to move and reaching maximum speed are different mechanical events.
 
@@ -225,93 +229,137 @@ Major-league organizations and private training facilities may already examine s
 
 Answering those questions requires measuring the complete movement instead of treating bat speed, barrel path, or kinematic sequence as a substitute for time.
 
-## A Better Study
+## The Theoretical Ideal Study
 
-The proposed study would collect many representative swings from each hitter, allowing within-hitter comparisons whenever reliably distinguishable movement patterns emerge. The goal would not be to label one body pattern correct. It would be to determine which measurable combinations of path, sequence, and time produce which outcomes.
+Imagine that every relevant signal could be recorded perfectly, without sensors restricting the hitter, a laboratory changing his behavior, or current technology limiting what can be observed. The purpose of this theoretical study would not be to prove that one swing is mechanically correct. It would be to identify what different movement solutions buy, what they cost, and when each solution helps a particular hitter.
 
-### Participants
+### The sample and setting
 
-The study would recruit approximately 30 to 40 advanced collegiate, minor-league, or comparably skilled hitters.
+The study would follow a large and diverse population of hitters across multiple seasons, levels of play, body types, handedness, and offensive roles. Every hitter would contribute thousands of swings rather than a short laboratory sample.
 
-Each hitter would face enough pitches to estimate his individual relationships among path length, initiation timing, pitch difficulty, and outcome. A target of approximately 150 analyzable swings per hitter would provide far more within-hitter information than the five or ten swings common in small laboratory studies.
+The dataset would combine controlled trials with genuine competition. The controlled setting would repeatedly present the same pitch demands, while the game setting would preserve uncertainty, pitcher deception, count, score, fatigue, pressure, and the consequences that shape real swing decisions.
 
-### Pitch and intent conditions
+The primary comparisons would remain within hitter. Between-hitter comparisons would help describe general patterns, but they would not be allowed to erase the possibility that two hitters solve the same task differently.
 
-Hitters would face randomized pitch speeds, types, movements, and locations from a programmable machine or live pitchers. They would not know the upcoming pitch.
+### Pitch and offensive constraints
 
-The primary session would use the hitter’s natural game swing. This would preserve representative coordination and allow swings to be analyzed as continuous measurements rather than forcing athletes into artificial categories.
+Every pitch’s complete flight would be known from release through the hitting zone, including velocity, spin, movement, location, seam orientation, visual background, and the hitter’s viewing geometry. The hitter would never be told the upcoming pitch.
 
-A secondary session could vary intent:
+Natural game swings would form the core of the study. Additional randomized trials would change the offensive problem without prescribing mechanics:
 
-- Contact-preservation or two-strike intent
-- Normal game intent
-- Maximum-damage intent
+- Protect the zone with two strikes
+- Take a normal game swing
+- Hunt a specific pitch or location for damage
+- Move a runner or prioritize contact
+- Maximize batted-ball damage
 
-The instructions would not define the mechanics. Motion data would determine whether a hitter actually shortened the barrel path, compressed segment-onset timing, or changed bat speed. This would also test whether the preferred tradeoff moves with the hitter’s goal.
+The hitter would receive only the offensive constraint. Researchers would not instruct him to shorten the path, become pushier, delay the hands, or improve the kinetic sequence. Any mechanical change would have to emerge from the hitter’s own response to the problem.
 
-### Synchronized measurements
+### A complete synchronized record
 
-The study would synchronize:
+A hypothetical, nonintrusive measurement system would record the full three-dimensional movement of every body segment and the bat at sub-millisecond resolution. It would also capture:
 
-- High-speed three-dimensional motion capture of the pelvis, torso, lead arm, hands, handle, and barrel
-- Force plates under both feet
-- Pitch tracking
-- High-speed video of bat–ball contact
-- Bat and batted-ball tracking
+- Ground-reaction forces and pressure beneath both feet
+- Joint angles, angular velocities, torques, and mechanical work
+- Muscle–tendon forces and individual muscle activation
+- Peripheral nerve activity and motor-unit recruitment
+- Eye, head, and gaze behavior
+- The visual information available to the hitter at every instant
+- Brain activity associated with perception, prediction, response selection, and motor preparation
+- Bat deformation, grip forces, and the motion of the handle and barrel
+- The complete ball–bat collision and resulting batted-ball flight
+- Fatigue, pain, arousal, expectation, count, score, and offensive intent
 
-Surface electromyography could be added to compare muscle activation with kinematic onset. EEG could be explored in a separate controlled task, but it would not define the primary clock.
+Unlike current motion-capture, electromyography (EMG), or electroencephalography (EEG) systems, these measurements would neither interfere with the swing nor introduce meaningful noise or delay. Every signal would share one clock aligned to pitch release and contact.
 
-All signals would be aligned to pitch release, mechanical loading reversals, each segment’s forward onset, each segment’s peak velocity, entry into the hitting region, and bat–ball contact or closest approach.
+### Several clocks instead of one invented moment
 
-### Defining the start
+Even perfect measurement would not make the swing decision a single obvious event. Perception, prediction, commitment, preparation, and movement can overlap. The study would therefore retain several distinct timestamps rather than forcing all of them into one label.
 
-For every tracked segment, researchers would identify the first sustained movement in the swing-producing direction after that segment’s final loading reversal. The earliest qualifying timestamp across all tracked segments would define composite onset.
+The primary mechanical clock would remain **composite swing time**. For the pelvis, torso, lead arm, hands, handle, and barrel, the first sustained movement in the swing-producing direction after the final loading reversal would be identified. The earliest qualifying onset across those segments would start the clock, and contact would stop it.
 
-The onset method would be preregistered. Its parameters would be supported by relevant research or pilot reliability testing rather than presented as universal values. A change-point method and several reasonable velocity thresholds would be compared to determine whether the findings depend on how onset was defined.
+The study would also record:
 
-Swings in which qualifying movement begins before pitch release would be retained and identified as pre-release initiations. They should not be forced to begin at release, because doing so would artificially shorten the recorded movement.
+- The first detectable neural preparation related to the eventual swing
+- The point at which swing probability begins to rise above take probability
+- The latest pitch information that measurably changes the movement or swing decision
+- EMG onset for the muscles that produce the swing
+- Every segment’s mechanical onset and peak velocity
+- Handle onset, barrel onset, entry into the hitting region, and contact
 
-### Path and sequence variables
+Late visual perturbations and precisely timed changes in pitch information would help estimate the latest usable information point. This would provide stronger evidence about commitment and adjustability than choosing one EEG feature and calling it the exact decision time.
 
-Compactness would be represented by the cumulative three-dimensional distance traveled by the barrel.
+### Path, concurrency, sequence, and adjustability
 
-The study would calculate:
+Compactness would be measured as the barrel’s cumulative three-dimensional travel. Both the full path from barrel onset to contact and a Statcast-compatible measure over approximately the final 150 milliseconds would be retained.
 
-- Full barrel travel from the barrel’s forward onset to contact
-- Statcast-compatible barrel travel over the final approximately 150 milliseconds
-- Composite onset-to-contact time
-- Initiation spread from the first segment onset to the last
-- Pelvis-to-torso, torso-to-hand, and hand-to-barrel onset delays
-- Peak-velocity order and the temporal gaps between peaks
-- Average and peak barrel speed
-- Time to peak barrel speed
-- Three-dimensional pitch–bat alignment
-- Acceptable timing-window width
+Pushiness would remain narrowly defined by **initiation spread**: the elapsed time from the earliest qualifying segment onset to the latest. A smaller spread would indicate a pushier, more concurrent onset pattern. The individual onsets would remain available so that the same spread produced by different segment orders would not be treated as the same swing.
 
-This would reveal whether a shorter swing is genuinely quicker, whether it is merely measured over a shorter route, and whether concurrency contributes independently of barrel distance.
+Peak-velocity sequence would be measured separately. The study would quantify the order, magnitude, and timing of segment peaks; the mechanical energy transferred between segments; and how efficiently that energy ultimately contributes to the barrel. It would therefore be possible to test whether a concurrent onset pattern is actually less efficient rather than assuming that it is.
 
-### Performance outcomes
+The barrel’s relationship to the pitch would also be reconstructed through the entire hitting region. This would measure not only arrival at one contact point, but also the amount of time and space over which the swing could tolerate errors in pitch prediction and timing.
 
-The primary outcomes would be:
+### Outcomes and tradeoffs
 
-- Contact versus miss
-- Closest bat–ball distance on misses
-- Early or late timing error
-- Squared-up percentage on contact
-- Bat speed at contact
-- Exit velocity
+Every swing would be evaluated through multiple outcomes:
 
-Pitch–bat intersection time would be included so that a path that reaches one point quickly is not automatically judged superior to a path that creates a wider opportunity for contact.
+- Swing, take, check swing, contact, foul, or miss
+- Composite time and pitch-relative initiation
+- Closest bat–ball distance and early-or-late error
+- Barrel-path length and acceptable timing-window width
+- Bat speed, collision efficiency, exit velocity, and batted-ball direction
+- Joint loading, muscular demand, fatigue, and injury risk
+- The amount of pitch information available before meaningful commitment
+
+No single outcome would define the best swing. A movement that saves time but loses substantial collision speed would represent a tradeoff. So would a high-speed swing that requires earlier commitment, a short route that narrows the timing window, or a powerful sequence that raises physical cost.
 
 ### Analysis
 
-The analysis would first determine whether an individual hitter demonstrates reliably distinguishable movement patterns across repeated swings. If he does, the primary analysis would compare that hitter with himself across those patterns. If he does not, barrel length, onset spread, and the other mechanical variables would remain continuous rather than forcing his swings into artificial groups.
+The analysis would model each mechanical variable continuously instead of assigning swings to simplistic good and bad categories. It would first establish the patterns a hitter actually displays and then compare that hitter with himself across repeated, matched pitch demands and offensive intentions.
 
-First, it would test whether shorter barrel paths predict shorter composite swing times. Second, it would test whether smaller initiation spreads predict additional reductions in time after accounting for barrel length. Third, it would examine whether shorter times and smaller spreads are associated with lower, equal, or higher bat speed.
+The primary tests would ask whether shorter barrel travel predicts shorter composite time; whether smaller initiation spread explains additional time after path length is considered; and whether those time savings correspond to changes in bat speed, decision timing, contact probability, timing tolerance, or physical load.
 
-The performance models would then test whether later pitch-relative onset, shorter composite time, and different path–sequence combinations predict contact, miss distance, timing accuracy, squared-up contact, and exit velocity.
+Individualized causal models would estimate the expected result if the same hitter used a slightly shorter path, a more concurrent onset pattern, or a different peak sequence under the same pitch and intent. Population models would then test which relationships generalize and which remain specific to the hitter.
 
-Models would account for pitch velocity, type, movement, location, contact point, hitter intent, and the hitter’s own typical mechanics. Relationships would be examined continuously rather than dividing every swing into simplistic “good sequence” and “bad sequence” categories. The constraints-led intent conditions would describe the situation—protect with two strikes, take a normal game swing, or hunt damage—without instructing the hitter to shorten his path, rotate simultaneously, or alter his mechanics. Any movement changes would have to emerge from the hitter’s own solution.
+Every definition and analysis would be preregistered. Results would be tested across alternative onset rules, alternative start points, different path windows, and held-out hitters, games, and seasons.
+
+## Limitations
+
+An ideal measurement system would remove many technical obstacles. It would not remove every scientific limitation.
+
+### A decision may not have one exact timestamp
+
+The largest conceptual limitation remains even with perfect neural data. A hitter can begin preparing one response, continue gathering information, modify the movement, and still stop or redirect part of it. “The decision” may be a developing state rather than a single event hidden inside the brain.
+
+Neural onset, muscle activation, first body movement, irreversible commitment, and the latest usable visual information answer different questions. Selecting one as the start of the clock is an operational choice, not the discovery of one universally true moment.
+
+### The perfect counterfactual cannot be observed
+
+The same hitter cannot face the exact same pitch in the exact same physical and psychological state and simultaneously produce two different swings. Repetition can make conditions extremely similar, but memory, expectation, fatigue, and adaptation change from trial to trial.
+
+Statistical models can estimate what might have happened under another movement solution. They cannot directly observe both outcomes of the same event. Claims that a pushier swing *caused* a particular time or performance change would therefore still require caution.
+
+### Measurement can change behavior
+
+Even nonintrusive observation may influence intent when a hitter knows he is being studied. Controlled repetition also reduces some of the uncertainty that defines competition, while real games cannot provide perfectly balanced pitch conditions. The ideal design needs both environments, but neither is a flawless substitute for the other.
+
+### The definitions create dependencies
+
+Composite swing time begins with the earliest segment onset, and initiation spread also includes that earliest timestamp. Their relationship may therefore contain mathematical and measurement coupling in addition to a biological relationship.
+
+The designation of forward movement, the segments included, the coordinate system, and the onset rule can also change the answer. Alternative clocks—pelvis, hand, handle, and barrel onset to contact—would be necessary to show that a result is not an artifact of one definition.
+
+### More information does not create one universal optimum
+
+The fastest swing is not necessarily the most productive swing. The highest bat speed is not necessarily worth its time, decision, contact, physical-load, or injury cost. A movement that is useful for a contact-oriented hitter with two strikes may be undesirable for a power hitter hunting one location.
+
+The study could describe each tradeoff far better than current research, but the preferred balance would still depend on the hitter’s abilities, health, role, and offensive goal.
+
+### Complexity can hide fragile conclusions
+
+Thousands of signals would create many plausible comparisons and highly flexible models. Without preregistration, held-out testing, transparent definitions, and replication, an apparently precise result could reflect overfitting rather than a real relationship.
+
+Theoretical access to every signal also does not guarantee that every signal is useful. The strongest explanation may still come from a small set of interpretable measures: barrel travel, segment onsets, pitch-relative timing, bat speed, timing-window width, and performance.
 
 ## My Hypothesis
 
@@ -321,11 +369,13 @@ I hypothesize that, within the same hitter, swings with shorter three-dimensiona
 
 This relationship will not be perfect. A longer path can be traversed quickly through greater acceleration, while a short path can still be slow. Nevertheless, reducing the distance the barrel must travel should create an opportunity to reduce total movement time.
 
-### H2: More simultaneous initiation will reduce time beyond path length alone
+### H2: A pushier, more concurrent initiation pattern will reduce time beyond path length alone
 
 I hypothesize that swings with smaller delays among the pelvis, torso, lead arm, hands, handle, and barrel will be completed more quickly, even after accounting for barrel-path distance.
 
 This does not require all segments to reach peak velocity at the same time. The prediction concerns when they begin contributing to the forward swing. A hitter could initiate several segments within a narrow window and still produce a proximal-to-distal order of peak speeds.
+
+In the proposed model, this smaller initiation spread—not an evaluator's visual impression—would be the measurable definition of a pushier swing. It would not classify the swing's barrel path, peak-speed sequence, connection, or outcome.
 
 ### H3: A larger sequencing delay may create bat speed at a time cost
 
@@ -352,7 +402,9 @@ The most effective compact swing should not merely reach a single predicted poin
 
 ## Conclusion
 
-A “quick swing” should describe a measured interval, not an impression.
+A “pushy swing” is usually treated as a mechanical failure. That judgment may be too broad.
+
+A swing that is arm-dominant, poorly connected, casts the barrel, or produces poor contact can still deserve criticism. But those faults should not be assumed merely because several segments begin moving within a narrow window. In this article, *pushy* refers only to that compressed onset pattern: a smaller initiation spread. Whether the same swing also has a shorter barrel path, produces less bat speed, displays a different order of peak velocities, or performs better or worse must be measured separately.
 
 Statcast swing length has made barrel distance visible, but distance is not time. Bat-speed testing measures how fast the barrel is moving near contact, but it does not reveal how long the hitter took to produce that speed. Kinematic-sequence testing describes the order of segment peaks, but it does not automatically identify the beginning or duration of the swing.
 
@@ -366,9 +418,9 @@ Current research does not tell us where those tradeoffs lie. It rarely measures 
 
 A useful assessment would do exactly that. It would start the clock from a transparent composite kinematic event, retain every individual timestamp, measure the barrel’s three-dimensional route, and evaluate the result against both contact and power.
 
-Until those measurements are connected, neither “shorter is quicker” nor “better sequencing is more efficient” should be treated as a complete explanation.
+Until those measurements are connected, neither “pushy is inefficient” nor “better sequencing is more efficient” should be treated as a complete explanation.
 
-> The relevant question is not only how fast the bat is moving at contact. It is how much movement—and how much time—the hitter needed to get it there.
+> The relevant question is not whether a swing looks pushy. It is what that movement pattern costs in bat speed, what it saves in time, and whether the tradeoff helps that hitter accomplish his offensive goal.
 
 ## Reading List
 

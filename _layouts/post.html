@@ -77,8 +77,13 @@ layout: default
     <span>In this note</span>
     <a href="#the-question">Question</a>
     <a href="#what-current-research-says">Research</a>
+    {% if page.hero == "swing-timing" %}
+    <a href="#the-theoretical-ideal-study">Ideal study</a>
+    <a href="#limitations">Limitations</a>
+    {% else %}
     <a href="#the-theoretically-best-study">Ideal study</a>
     <a href="#what-limits-the-theoretical-study">Limitations</a>
+    {% endif %}
     <a href="#my-hypothesis">Hypothesis</a>
     <a href="#conclusion">Conclusion</a>
   </nav>

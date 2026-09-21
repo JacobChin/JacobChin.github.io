@@ -5,7 +5,7 @@ description: "A research-based look at how the rate, timing, and repeatability o
 author: Jacob Chin
 note: "001"
 topics: "Baseball · Vision · Biomechanics"
-read_time: "12 min read"
+read_time: "15 min read"
 display_date: "September 2026"
 permalink: /articles/head-movement/
 ---
@@ -111,7 +111,7 @@ The existing research has several limitations:
 
 Consequently, the proposed relationship between head translation, visual stability, and contact quality is plausible but not yet well tested.
 
-[Fooken et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC7938007/){: .source-link }
+[Chen et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC7938007/){: .source-link }
 
 ### What we know and what we do not
 
@@ -132,49 +132,60 @@ The research has not yet established:
 
 These unanswered questions require a study that measures the entire pitch-to-contact sequence.
 
-## A Better Study
+## Theoretical Ideal Study {:#the-theoretically-best-study}
 
-The proposed study would examine the relationship within each hitter, swing by swing. It would not assume that every hitter needs the same head position or movement pattern.
+Assume that cost, technology, access, and processing power are not constraints. The ideal study would record every relevant feature of the pitch, hitter, visual system, swing, and collision with perfect accuracy and without interfering with the hitter’s natural behavior.
 
-### Participants
+The purpose would not be to find one head position that every hitter should copy. It would be to determine, within each hitter, whether changes in the rate, timing, direction, and repeatability of head translation alter visual stability and contribute to changes in bat-to-ball accuracy and contact quality.
 
-The study would recruit approximately 30 to 40 advanced collegiate, minor-league, or comparably skilled hitters.
+### Participants and time scale
 
-Each hitter would face approximately 150 to 200 pitches. A large number of swings per hitter would be necessary to estimate an individual movement pattern and determine whether departures from that pattern are associated with different contact outcomes.
+The study would follow thousands of hitters across multiple seasons, including youth, high-school, collegiate, professional, male, female, right-handed, left-handed, and switch hitters. Each hitter would contribute data from training, controlled experiments, simulated games, and actual competition.
 
-### Pitch conditions
+This scale would make it possible to separate short-term swing variation from stable individual patterns, learning, fatigue, injury, aging, and changes in competition level. It would also show whether the same relationship appears across different bodies, stances, stride styles, pitch environments, and levels of skill.
 
-Hitters would face pitches that vary in velocity, vertical and horizontal movement, location, and pitch type.
+### Complete pitch and game context
 
-The pitches could be delivered by a programmable pitching machine or live pitchers. In either case, the complete trajectory of every pitch would be recorded so that the analysis could account for differences in pitch difficulty.
+Every pitch would be reconstructed from release to the plate. The data would include velocity, spin, movement, seam orientation, release point, location, pitch type, and the exact three-dimensional trajectory of the ball.
 
-### Synchronized measurements
+The study would also record the count, previous pitches, pitcher identity and delivery, defensive alignment, game situation, lighting, background contrast, weather, crowd noise, fatigue, and the hitter’s expectations before release. These variables matter because a hitter may move differently when anticipating a fastball, protecting with two strikes, recognizing a breaking ball late, or facing an unfamiliar delivery.
 
-The study would synchronize:
+### Perfect synchronized measurement
 
-- Three-dimensional motion capture of the head and body
-- A head-mounted inertial measurement unit
-- Binocular eye tracking
-- Force plates beneath the hitter
-- Pitch tracking
-- Bat tracking
-- High-speed batted-ball tracking
+Every system would be recorded continuously and aligned on the same timeline:
 
-Force plates are particularly important because they would identify front-foot contact and the subsequent center-of-pressure shift. These events would allow the researchers to determine whether the head’s forward translation slows at a consistent mechanical point.
+- Exact three-dimensional translation and rotation of the head, eyes, trunk, pelvis, arms, hands, and bat
+- Binocular gaze direction, foveal location, smooth pursuit, saccades, vergence, accommodation, pupil response, and blink timing
+- The image of the ball on each retina, including retinal slip and gaze–ball error
+- Vestibular signals and the compensatory eye movements produced as the head moves
+- Ground-reaction forces, pressure beneath each foot, center of pressure, and whole-body center of mass
+- Muscle activation, joint forces, motor commands, and the hitter’s intended swing decision
+- Bat path, bat speed, attack angle, barrel orientation, and the exact location and timing of bat–ball impact
+- Ball deformation, bat deformation, collision efficiency, exit velocity, launch angle, and spray angle
 
-All signals would be aligned to pitch release, the beginning of the load, front-foot contact, center-of-pressure transfer, swing initiation, and bat–ball contact.
+The measurement system would be completely non-intrusive. It would not add weight to the head, block vision, restrict movement, delay feedback, or make the hitter consciously change his normal swing.
 
-### Head-movement variables
+### Head movement and visual stability
 
-The analysis would measure horizontal and vertical head translation throughout the swing.
+Head rotation and translation would be analyzed separately in three dimensions and relative to several reference frames: the ground, the hitter’s trunk, the pitcher, and the moving ball.
 
-Variables would include displacement, velocity, acceleration, jerk, direction of movement, the timing of peak forward velocity, the timing and rate of deceleration, head velocity at front-foot contact and bat–ball contact, any reversal into backward translation, and swing-to-swing repeatability.
+For translation, the study would calculate position, displacement, velocity, acceleration, jerk, direction, peak forward velocity, the timing and rate of deceleration, movement remaining after front-foot contact, any backward reversal, and swing-to-swing repeatability.
 
-Head rotation would be measured separately. This would show whether the hitter’s head remains relatively stationary in space while continuing to rotate with the pitch and swing.
+The study would then directly measure visual stability rather than assume it. Visual stability would include retinal image motion, gaze–ball error, the size and timing of corrective eye movements, foveation time, and the accuracy of the hitter’s internal estimate of where and when the ball will arrive.
 
-### Contact outcomes
+This would allow researchers to ask whether slower head translation actually produces a steadier visual signal, whether the eyes compensate successfully for continued translation, and whether that relationship changes by hitter or pitch type.
 
-The primary outcomes would be:
+### Experimental design
+
+The study would begin with natural swings to identify each hitter’s typical head path. It would then use randomized, hitter-specific conditions that create small changes in the timing and rate of head translation while preserving the rest of the swing as closely as possible.
+
+Each hitter would therefore serve as his or her own comparison. A swing would be compared with that hitter’s normal movement rather than with a universal group average.
+
+The ideal analysis would also construct an individualized digital model of each hitter. For every real swing, the model could estimate counterfactual versions of the same event: what would likely have happened if the pitch, decision, and bat path remained the same but the head translated faster, slower, earlier, later, or more variably?
+
+### Outcomes and analysis
+
+The primary outcomes would remain:
 
 - Contact versus miss
 - Closest bat–ball distance on missed swings
@@ -182,23 +193,61 @@ The primary outcomes would be:
 
 Statcast defines squared-up percentage as the amount of exit velocity produced relative to the maximum possible exit velocity given the pitch velocity and swing speed. A swing reaching at least 80 percent of its possible exit velocity is classified as squared up.
 
-This makes squared-up percentage a measure of contact efficiency after contact occurs. It does not replace contact rate: a hitter must first reach the ball before the quality of that contact can be evaluated.
-
-Exit velocity, launch angle, and spray angle would be retained as secondary descriptions of the resulting batted ball.
+Exit velocity, launch angle, spray angle, and the exact impact location on the barrel would describe the resulting batted ball. Decision quality—whether the hitter should have swung—would be evaluated separately so that swing selection is not confused with swing execution.
 
 [MLB Statcast: Squared-Up Rate](https://www.mlb.com/glossary/statcast/squared-up){: .source-link }
 
-### Analysis
+The analysis would trace the complete proposed pathway:
 
-The primary analysis would compare each hitter with himself.
+> Head translation → visual stability → estimate of pitch location and arrival time → bat path and timing → bat–ball collision
 
-The central question would be whether a hitter’s better-than-usual contact occurs when his head follows a slower and more repeatable translational pattern between front-foot contact and bat–ball contact.
+It would test both direct and indirect relationships. For example, head movement might affect contact through the visual system, through the hitter’s balance and body rotation, through both, or not at all.
 
-The statistical model would account for pitch velocity, location, movement, type, swing timing, and bat speed. Primary predictors would include head velocity at front-foot contact, the change in head velocity after front-foot contact, average head velocity and remaining displacement before contact, the timing of any backward movement, and deviation from the hitter’s typical head path.
+The final result would be an individualized response curve rather than a single rule. It would estimate how much head translation a particular hitter can accommodate, when that translation becomes disruptive, and how repeatable the movement must be for that hitter to maintain accurate contact.
 
-The analysis would then test whether those variables are associated with contact probability, closest bat–ball distance, and squared-up percentage.
+## Limitations {:#what-limits-the-theoretical-study}
 
-This within-hitter approach avoids assuming that one athlete’s preferred head path should be imposed on another athlete.
+Even this theoretical study would have limitations.
+
+### Perfect measurement is not practical
+
+No current system can record every retinal, vestibular, neural, biomechanical, environmental, and collision variable perfectly during unrestricted competition. Combining all of these measurements at game speed would require technology that either does not yet exist or cannot currently be used without affecting the hitter.
+
+The study is therefore a description of the information researchers would ideally want, not a protocol that could be completed exactly as written today.
+
+### Head translation cannot be completely isolated
+
+Changing the head’s movement may also change posture, balance, pelvis and trunk rotation, the position of the strike zone relative to the eyes, and the path of the bat. The head is part of a connected body, not an independent object.
+
+Therefore, even a carefully designed intervention may not be able to change only head translation while leaving every other part of the swing identical. If contact changes, researchers would still need to determine whether the cause was visual, mechanical, or a combination of the two.
+
+### Counterfactual swings remain estimates
+
+A digital model could estimate what would have happened if the same hitter moved his or her head differently on the same pitch, but both versions of one swing cannot occur in reality. The unobserved version is a counterfactual and would still depend on assumptions built into the model.
+
+Perfect information about the swing that occurred would not automatically provide perfect knowledge of the swing that did not occur.
+
+### Observation may change behavior
+
+Hitters may consciously alter their movement when they know it is being studied, especially when they receive instructions involving the head. Laboratory swings may therefore differ from the hitter’s natural competitive movement even if the equipment itself is non-intrusive.
+
+### The optimal pattern may depend on context
+
+A useful head path may differ with pitch location, pitch speed, movement, count, swing decision, stance, body structure, fatigue, and individual visual strategy. A pattern associated with better contact on one pitch type may not be ideal on another.
+
+The study might therefore find several effective solutions rather than one universally optimal movement pattern.
+
+### Contact quality is not the entire goal of hitting
+
+Contact, bat–ball distance, and squared-up percentage describe execution, but they do not completely describe offensive value. A hitter must also decide whether to swing, control the strike zone, adapt to game context, and produce useful trajectories.
+
+A movement pattern that improves contact efficiency could still have a negative overall effect if it makes the hitter less adjustable, reduces bat speed, or encourages swings at poor pitches.
+
+### Population averages can hide individual solutions
+
+Even with thousands of hitters, the average relationship may not describe any one athlete particularly well. Some hitters may compensate for continued head translation with eye movements or a highly repeatable body pattern, while others may be more sensitive to the same amount of movement.
+
+For that reason, the study would need to report both population-level findings and individualized results. Its conclusions should identify ranges and probabilities, not turn one average pattern into a universal coaching rule.
 
 ## My Hypothesis
 
@@ -253,7 +302,7 @@ Until that study is completed, the best conclusion is not that hitters should el
 2. [Kishita et al. — Temporally Coupled Coordination of Eye and Body Movements](https://pmc.ncbi.nlm.nih.gov/articles/PMC7739824/)
 3. [Higuchi et al. — Head-Eye Movement of Collegiate Baseball Batters During Fastball Hitting](https://pmc.ncbi.nlm.nih.gov/articles/PMC6049917/)
 4. [Fogt — Vertical Head and Eye Movements in Baseball Batting](https://pmc.ncbi.nlm.nih.gov/articles/PMC7717490/)
-5. [Fooken et al. — Visuomotor Predictors of Batting Performance in Baseball Players](https://pmc.ncbi.nlm.nih.gov/articles/PMC7938007/)
+5. [Chen et al. — Visuomotor Predictors of Batting Performance in Baseball Players](https://pmc.ncbi.nlm.nih.gov/articles/PMC7938007/)
 6. [Skills Associated with Baseball Batting Performance: A Scoping Review](https://pmc.ncbi.nlm.nih.gov/articles/PMC12660529/)
 7. [MLB Statcast — Squared-Up Rate](https://www.mlb.com/glossary/statcast/squared-up)
 

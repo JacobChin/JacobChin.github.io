@@ -9,6 +9,8 @@ topics: "Baseball · Biomechanics · Perception"
 read_time: "27 min read"
 display_date: "September 2026"
 permalink: /articles/decision-to-contact/
+ideal_study_anchor: the-theoretical-ideal-study
+limitations_anchor: limitations
 ---
 
 ## The Question

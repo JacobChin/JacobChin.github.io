@@ -9,6 +9,8 @@ topics: "Baseball · Simulation · Lineup Optimization"
 read_time: "30 min read"
 display_date: "September 2026"
 permalink: /articles/optimizing-offensive-lineups/
+ideal_study_anchor: the-theoretically-best-study
+limitations_anchor: what-limits-the-theoretical-study
 ---
 
 ## The Question

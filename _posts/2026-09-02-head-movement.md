@@ -8,6 +8,8 @@ topics: "Baseball · Vision · Biomechanics"
 read_time: "15 min read"
 display_date: "September 2026"
 permalink: /articles/head-movement/
+ideal_study_anchor: theoretical-ideal-study
+limitations_anchor: limitations
 ---
 
 ## The Question

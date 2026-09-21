@@ -4,8 +4,9 @@ title: "What Would the Most Productive Offensive Lineup Look Like?"
 description: "A research-based framework for simulating baseball lineups, testing nine copies of one hitter, and building the best nine-player offense while accounting for baserunning."
 author: Jacob Chin
 note: "003"
+hero: lineup-simulation
 topics: "Baseball · Simulation · Lineup Optimization"
-read_time: "26 min read"
+read_time: "30 min read"
 display_date: "September 2026"
 permalink: /articles/optimizing-offensive-lineups/
 ---
@@ -259,209 +260,262 @@ The literature does not support one universal answer about contact, power, speed
 
 These findings shape the proposed study.
 
-## A Better Study
+## The Theoretically Best Study
 
-The study should be divided into two experiments using the same offensive engine.
+The best possible study would not begin with whichever statistics are publicly available. It would begin by defining the exact counterfactual and then assume access to every measurement needed to represent it.
 
-The first would allow duplicated players and evaluate every qualified 2025 hitter as a nine-copy lineup. The second would require nine unique hitters and jointly optimize both player selection and batting order.
+The target question would be:
 
-Both experiments should use a neutral environment so that every candidate faces the same assumptions.
+> If every qualified 2025 Major League hitter were placed into the same neutral 2025 baseball environment, which repeated-hitter lineup and which nine-player lineup would produce the most runs per 27 outs?
 
-### Player pool and objective
+The study would preserve each player's 2025 offensive ability while removing unequal schedules, home parks, opponents, weather, teammates, and playing opportunities. It would then rebuild plate appearances and baserunning plays from their underlying components rather than treating observed season totals as complete descriptions of talent.
 
-The player pool would contain all hitters who qualified for the 2025 Major League batting title. Restricting the sample to qualified hitters reduces the most severe small-sample problems and makes the initial comparison reproducible.
+The first experiment would allow duplicated players. The second would require nine unique hitters. Both would use the same generative baseball model so that differences between the experiments could not be attributed to different assumptions.
 
-This restriction does not imply that the true best offensive roster could never include a part-time player. It defines the scope of this first experiment.
+### Define the player and the environment separately
 
-The primary objective would be expected runs per 27 outs. This avoids complications caused by home teams sometimes batting only eight innings or skipping the bottom of the ninth. Full nine-inning games would still be simulated to examine the distribution of team scoring.
+The player pool would contain everyone who qualified for the 2025 Major League batting title. Qualification would define eligibility, not the amount of information available about each player.
 
-Secondary results would include:
+For every hitter, the study would estimate a complete 2025 offensive talent profile. That profile would distinguish stable player ability from the circumstances in which his outcomes happened.
 
-- Runs per game
-- Probability of scoring zero, one, or multiple runs in an inning
-- Probability of scoring at least three, five, or ten runs in a game
-- Plate appearances per game
+The neutral environment would then be specified independently. Every candidate lineup would face the same distribution of:
+
+- Pitcher quality and handedness
+- Pitch types, velocities, movements, and locations
+- Defensive quality, positioning, range, and arm strength
+- Ballparks and dimensions
+- Temperature, wind, humidity, and air density
+- Umpire strike-zone behavior
+- Game balls and other run-environment conditions
+
+One defensible neutral environment would reproduce the complete distribution of Major League conditions in 2025. Another would use one standardized park, weather condition, defense, and opponent. The primary analysis should choose one definition in advance and then repeat the experiment under other neutral environments to determine whether the winning lineup changes.
+
+The primary objective would be expected runs per 27 outs. Full games would also be simulated to estimate the complete distribution of scoring, including scoreless innings, large innings, low-scoring games, and extreme offensive games.
+
+### Generate plate appearances from their underlying process
+
+The ideal model would not draw a generic outcome such as *single* or *out* directly from a hitter's season line.
+
+It would generate the sequence that produces the outcome.
+
+For every pitch, the model would represent:
+
+- The pitcher's pitch selection and intended location
+- Actual pitch velocity, movement, spin, release, and location
+- The catcher's target and receiving ability
+- The umpire's probability of calling a ball or strike
+- The hitter's pitch recognition, swing decision, and timing
+- Bat speed, swing length, attack angle, contact point, and bat–ball collision quality
+- Exit velocity, launch angle, spray angle, spin, hang time, and projected landing point
+- Defensive positioning, first step, route, range, transfer, and throw
+- The probability of every fielder completing the play
+
+This produces walks, strikeouts, hit by pitch, foul balls, balls in play, errors, and every hit type through one connected process.
+
+The advantage is not complexity for its own sake. It prevents the model from double counting traits. Sprint speed would affect whether a hitter beats a ground ball or stretches a hit only once, inside the play that produces the result. It would not first appear inside the player's observed triple rate and then be added again as a separate speed bonus.
+
+The model would also permit interactions. A hitter's swing decision could change with the count, pitcher's repertoire, base-out state, previous pitches, and expected value of a ball in play. A pitcher could change his plan after seeing the same elite hitter repeatedly. The plate appearance would therefore depend on the hitter, pitcher, situation, and history rather than one fixed probability vector.
+
+### Preserve the identity and physical state of every runner
+
+Once the ball is in play, the simulation would retain the identity of every runner and fielder.
+
+The state would include:
+
+- Outs, inning, and batting-order position
+- The identity and exact location of every runner
+- Lead distance, secondary lead, first movement, acceleration, and current speed
+- Runner route, turn efficiency, fatigue, and injury state
+- The batted ball's trajectory and time to each relevant location
+- Fielder position, route, pickup time, exchange time, arm strength, and throwing accuracy
+- Cutoff and relay positioning
+- The location and movement of the other runners
+- Coaching signals and the information available to the runner and third-base coach
+
+The model would simulate the race itself. First-to-third advancement would emerge from the runner's lead, reaction, acceleration, route, the ball's location, the fielder's pickup, and the throw. It would not be assigned from a generic first-to-third percentage.
+
+The same logic would cover:
+
+- Steals of second, third, and home
+- Pickoffs and back-picks
+- Advancement on singles and doubles
+- Tagging on fly balls
+- Advancement on ground balls and force plays
+- Double-play turns and double-play avoidance
+- Wild pitches, passed balls, blocked pitches, and balls temporarily escaping the catcher
+- Rundowns, appeals, obstruction, interference, and rare multi-runner plays
+
+No event would be excluded merely because it is rare. If it can affect an out or a run, it belongs in the theoretical model.
+
+### Separate physical ability from decision quality
+
+The ideal study would estimate at least three distinct baserunning quantities.
+
+**Opportunity** describes whether a runner could plausibly attempt an advance.
+
+**Physical success probability** describes the chance of reaching safely if he attempts it, given the complete play.
+
+**Decision policy** describes whether he goes, holds, returns, or changes course based on the information available at that moment.
+
+This distinction would allow two versions of each lineup.
+
+The first would preserve the players' own 2025 decision behavior. It would answer how the lineup would perform if each runner retained his observed aggressiveness and judgment.
+
+The second would apply the run-maximizing decision at every branch while keeping the player's physical ability unchanged. It would answer what the same group could produce with theoretically optimal decisions.
+
+The difference would measure decision value without pretending that optimal judgment makes a slow runner physically faster.
+
+### Experiment 1: every possible clone lineup
+
+Each qualified hitter would occupy all nine lineup positions and receive an unlimited number of simulated opportunities against the identical neutral environment.
+
+The study would report:
+
+- Expected runs per 27 outs
+- The complete inning and game run distributions
+- Plate appearances created before 27 outs
+- Runs produced through home runs and other extra-base hits
+- Runs produced or lost through baserunning
+- Double plays created and avoided
 - Runners left on base
-- Outs made on the bases
-- Runs attributable to steals and other advancement
-- Double plays created or avoided
+- Results with observed and optimal running decisions
 
-The best lineup by average runs may not have the same scoring distribution as the runner-up. One may produce runs more consistently while another creates more extreme high-scoring games.
+The model would also perform controlled substitutions. The clone could receive league-average running, league-average power, league-average contact, or league-average plate discipline while every other component remained unchanged.
 
-### The offensive state
+These interventions would explain why the best clone wins. They would distinguish the value of preserving outs, accumulating runners, clearing the bases, and gaining bases after reaching.
 
-The minimum state would include:
+### Experiment 2: every unique roster and batting order
 
-- Number of outs
-- Identity of the runners on first, second, and third
-- Batter due to hit
-- Current position in the batting order
+The second experiment would evaluate every possible selection of nine unique qualified hitters and every one of the 362,880 orders for each selection.
 
-The identity requirement is the largest departure from a basic 24-state model. First base occupied by an elite runner is not the same state as first base occupied by a slow runner, even though both appear identical in a conventional base-out table.
+Assuming unlimited computing power, no heuristic search would be necessary. Every roster-order combination would receive an exact expected-value calculation or enough common-random-number simulations to make Monte Carlo error negligible.
 
-For a neutral run-production model, score, inning, and opposing lineup do not need to change offensive decisions. They can be added for bookkeeping and distributional validation without controlling strategy.
+The optimum would be reported alongside all lineups that are practically or statistically indistinguishable from it. The purpose would not be to manufacture certainty when several orders have essentially the same run value.
 
-### Plate-appearance outcomes
+The analysis would then compare the unrestricted optimum with restricted alternatives:
 
-Each hitter would receive a probability distribution for mutually exclusive offensive events. At minimum, the model should distinguish:
+- Contact-oriented lineups
+- Power-oriented lineups
+- On-base-oriented lineups
+- Speed-oriented lineups
+- The nine highest clone scores
+- The nine highest values from an overall statistic such as wRC+
+- Conventionally ordered and randomly ordered lineups
 
-- Unintentional walk
-- Hit by pitch
-- Strikeout
-- Single
-- Double
-- Triple
-- Home run
-- Ground-ball out
-- Air out
-- Double-play opportunity or outcome
-- Reached on error
-- Fielder's choice
-- Sacrifice fly opportunity
+Contact and power would be treated as continuous, multidimensional profiles rather than labels based on batting average or home-run totals. Contact would include swing-and-miss, strikeout avoidance, and contact quality across pitch regions. Power would include collision quality, extra-base potential, and home-run probability after standardizing the environment.
 
-Separating groundouts from air outs is necessary because their runner consequences differ. Treating every out as one event would eliminate double plays, force advancement, tagging, and sacrifice flies.
+Every restricted roster would receive the same exhaustive ordering process as the unrestricted roster. Otherwise, the comparison would mix roster composition with unequal optimization.
 
-The probabilities should be estimated from 2025 event-level data, with shrinkage toward appropriate league averages. Qualified hitters have substantial samples, but triples, steals of third, advancement outs, and several other events remain sparse.
+### Allow opponents to respond
 
-A neutral version could apply the 2025 league distribution of left- and right-handed pitching to every lineup. A more advanced version could estimate hitter outcomes against standardized pitcher-quality distributions. The same opponent environment must be used for all candidates.
+A lineup does not face a passive distribution of pitches.
 
-### Avoiding double counting
+Pitchers and defenses adjust to personnel, handedness, count, base-out state, prior outcomes, and the hitters who follow. Nine copies of one hitter would reveal an extreme amount of information about one swing and one strike zone. A mixed lineup could force repeated changes in pitch plan, defensive alignment, and bullpen matchups.
 
-Player speed already influences observed batting statistics.
+The theoretical model would therefore include an opponent-response layer. Pitchers, catchers, fielders, and managers would select strategies that minimize expected runs, while the offense would select swing, running, and advancement strategies that maximize them.
 
-A fast hitter may beat out more infield ground balls, turn hits into doubles or triples, and avoid some double plays. If a simulation begins with his observed single, triple, and grounded-into-double-play rates, those speed effects are already partially embedded in the plate-appearance probabilities.
+The final result would be an equilibrium between an optimizing offense and an optimizing defense—not a lineup exploiting an opponent that never reacts.
 
-The model should not then award an additional speed adjustment to the same event.
+### Quantify uncertainty even with unlimited information
 
-There are two defensible approaches:
+Unlimited information would not make baseball deterministic.
 
-1. **Observed-outcome approach:** Use each hitter's actual event rates, then apply player-specific speed only to events occurring after the batter has reached base. Grounded-into-double-play rate remains part of the batter's observed outcome distribution.
-2. **Generative approach:** Begin with batted-ball type and location, then generate infield hits, extra-base hits, and double plays using batter speed, runner speed, defensive context, and ball characteristics.
+The study would estimate a distribution for every player's underlying 2025 talent rather than treating one fitted value as known perfectly. It would distinguish uncertainty in talent from randomness in the plays generated by that talent.
 
-The second approach is more complete but requires much more data and modeling. The first is appropriate for an initial retrospective study as long as its boundary is stated clearly.
+Final rankings would therefore include:
 
-### The baserunning layer
+- Expected run production
+- Credible or confidence intervals
+- Probability of finishing first
+- Probability of belonging to the near-optimal set
+- Sensitivity to the definition of the neutral environment
+- Sensitivity to observed versus optimal strategy
 
-The model should separate four components.
+A lineup that ranks first under one fitted model but rarely ranks first across plausible talent estimates should not be presented as a definitive winner.
 
-**Opportunity** determines whether advancement is possible. Examples include a runner on first when a single reaches the outfield or a runner on second with fewer than two outs when a fly ball is caught.
+### Validate every layer before trusting the optimum
 
-**Attempt probability** estimates whether the runner tries to take the additional base. It should depend on the runner's historical aggressiveness, speed, the number of outs, and available information about the play.
+The model would be tested from the smallest event to the full season.
 
-**Success probability** estimates whether the runner reaches safely given an attempt. It should depend on runner ability and, where public data allow, the type and location of the batted ball and the fielder involved.
+Pitch-level predictions would be checked for swing decisions, contact, called strikes, and batted-ball quality. Play-level predictions would be checked for catches, throwing outcomes, advancement attempts, success rates, and double plays. Game-level predictions would be checked for plate appearances, hit types, walks, strikeouts, stolen bases, outs on the bases, runners left on base, inning scores, and total runs.
 
-**Run consequence** is not assigned manually. It emerges from the new base-out state and what the subsequent hitters do.
+Validation would use seasons and games not used to fit the model. It would evaluate calibration and the entire outcome distribution—not only whether league-average runs happened to match.
 
-The simulation should include, at minimum:
+The study would then perform component-removal tests. Runner identity, opponent adjustment, weather, detailed defense, steals, handedness, and other layers would be removed one at a time. The resulting changes would reveal which information actually alters the winning lineup and which complexity has little practical effect.
 
-- Stolen-base attempts at second and third
-- Caught stealing and pickoffs
-- First-to-third advancement on singles
-- Second-to-home advancement on singles
-- First-to-home advancement on doubles
-- Tagging from second or third on air outs
-- Advancement and outs on ground balls
-- Batter and runner effects on double plays
-- Wild pitches and passed balls at league-average rates
+## What Limits the Theoretical Study
 
-Rare events such as triple plays, steals of home, catcher's interference, and runners being struck by batted balls could be excluded initially, documented, and tested for materiality.
+The ideal design is useful because it defines the target. It is not currently possible to reproduce every part of it.
 
-### Observed running versus optimal running
+### Important measurements are unavailable or incomplete
 
-Two baserunning policies should be reported.
+Public pitch and batted-ball tracking is detailed, but it does not expose every input required to reconstruct a play.
 
-The first would preserve each player's observed 2025 attempt tendencies. This answers a retrospective question: how would these hitters have performed together if they continued making decisions like the ones observed during the season?
+Complete runner leads, jumps, routes, turns, coaching signs, fielder reads, exchanges, cutoff decisions, and positioning histories are not all available publicly at the required resolution. Some Statcast models use information that is summarized in public leaderboards without releasing every underlying probability or feature.
 
-The second would hold physical success probabilities fixed but choose the action with the highest expected run value in the current state. This answers a counterfactual question: what could the lineup produce if every runner made the run-maximizing decision?
+Biomechanical measures such as hitter-specific swing decisions, bat paths, fatigue, and movement adjustments are also incomplete. Even organizations with private tracking do not observe a player's internal perception or intended action directly.
 
-The difference between the two is decision value. It prevents a player's physical speed and strategic aggressiveness from being collapsed into one rating.
+### Historical outcomes do not identify every counterfactual
 
-### Experiment 1: nine copies of one hitter
+Data show what happened under the conditions players actually faced. They do not automatically reveal what would have happened under conditions that never occurred.
 
-Every qualified hitter would be placed into all nine batting positions and simulated under identical conditions.
+A runner usually attempts an extra base when he believes the play is favorable. The observed success rate among attempts therefore comes from a selected group of opportunities. Estimating what would have happened on the plays he declined requires a counterfactual model.
 
-The primary ranking would compare expected runs per 27 outs. The analysis would also report:
+The same problem appears in pitching. A hitter does not receive a random sample of pitches. Pitchers choose locations and pitch types in response to his strengths, weaknesses, the count, and the surrounding lineup. Separating hitter ability from opponent selection requires strong modeling assumptions.
 
-- Batting-only production with neutral league-average running
-- Production with the player's own baserunning profile
-- Production with optimal baserunning decisions
-- The change created by removing home runs
-- The change created by replacing the player's running with league-average running
+### Rare events remain sparse
 
-These controlled versions would show *why* the leading clone wins.
+Qualification provides many plate appearances, but it does not create large samples for every conditional event.
 
-A hitter could rank first because he almost never makes outs, because he frequently clears the bases, because he combines both skills, or because his running creates extra value in the large number of opportunities generated by nine copies of himself.
+Triples, steals of third or home, rundowns, advancement outs, unusual double plays, particular batter-pitcher combinations, and extreme weather situations may occur only a few times—or not at all—for an individual player in one season.
 
-### Experiment 2: nine unique hitters
+The model must borrow information across players and situations. That improves stability but moves the result away from a purely individual description.
 
-The unrestricted experiment would choose nine different players and arrange them in an order.
+### One season is not identical to true talent
 
-This is both a selection problem and a sequencing problem. Choosing the nine highest individual clone scores would not necessarily produce the best mixed lineup. Clone value measures how a player interacts with copies of himself. A unique-player lineup may benefit from complementary profiles.
+The question uses 2025 hitters, but a season contains injury, fatigue, mechanical change, aging, luck, and uneven opportunity.
 
-The search should occur in stages:
+A player's observed 2025 performance is neither a perfect measure of his underlying ability nor one stationary skill level. The answer can change depending on whether the study targets his average 2025 ability, his healthy ability, his end-of-season ability, or the exact sequence of forms he displayed throughout the year.
 
-1. Use individual and pairwise results to create a broad candidate set.
-2. Generate thousands of plausible nine-player rosters.
-3. Optimize the order within each roster using swaps and larger lineup changes.
-4. Allow occasional worse moves early in the search to avoid local optima.
-5. Re-simulate the strongest candidates with much larger samples.
-6. Compare finalists using common random-number streams so that identical random circumstances are applied to competing lineups.
-7. Bootstrap player probabilities to determine whether the apparent winner remains strong under sampling uncertainty.
+That ambiguity cannot be solved by collecting more of the same statistics. It requires a definition of which version of the player the hypothetical lineup contains.
 
-For the final candidates, all 362,880 orders could be evaluated with a faster expected-value engine or screened before large Monte Carlo confirmation.
+### Clone lineups violate ordinary competitive feedback
 
-The reported result should include a *near-optimal set*, not only one winner. If several lineups differ by less than the uncertainty interval, the honest conclusion is that the data do not identify one definitive order.
+Nine copies of one hitter have never faced a Major League defense.
 
-### Contact, power, and mixed-lineup comparisons
+Pitchers could learn one strike zone and one swing repeatedly. Defensive positioning could become unusually specialized. Bullpen decisions and platoon strategy would change. The hitter might also adjust after receiving far more plate appearances than a real player receives in one game.
 
-The contact-versus-power question must be defined before it is tested.
+Those feedback effects have no direct historical comparison. They must be inferred from less extreme situations, making the clone experiment inherently more model-dependent than the unique-player experiment.
 
-A "contact lineup" should not simply mean the nine players with the highest batting averages. Batting average combines contact, batted-ball quality, speed, and luck. A more defensible contact classification would emphasize strikeout avoidance and in-zone or overall contact rate while retaining a minimum standard of on-base ability.
+### The search space is enormous
 
-A "power lineup" should emphasize isolated power, extra-base-hit rate, barrel rate, or expected slugging rather than raw home-run total, which depends on playing time.
+Even after restricting the pool to qualified hitters, evaluating every nine-player selection and every batting order creates an enormous number of candidates. Adding player-specific runners, pitch-by-pitch opponent strategy, defensive movement, weather, and decision optimization makes each evaluation expensive.
 
-The study should compare:
+Real studies must use screening, heuristics, surrogate models, or staged simulation. Those methods can find excellent lineups without guaranteeing that the global optimum was tested directly.
 
-- The unrestricted optimized lineup
-- A contact-restricted optimized lineup
-- A power-restricted optimized lineup
-- An on-base-restricted optimized lineup
-- The nine best clone hitters
-- A conventional lineup ordered by an overall statistic such as wRC+
-- Thousands of random qualified-hitter lineups
+### The impossible lineups cannot be validated directly
 
-Each restricted roster must still have its batting order optimized. Otherwise, the comparison would confound roster type with poor sequencing.
+A model can be validated on real teams and real games. It cannot be validated on nine copies of one player or on a roster that has never existed.
 
-The categories should also be tested at several thresholds. A conclusion that changes when "power hitter" moves from the top 20 percent to the top 25 percent is not a robust conclusion.
+Strong performance on observed baseball increases confidence that the underlying transitions are reasonable. It does not prove that the model extrapolates correctly to extreme counterfactual lineups.
 
-### Validation
+The farther the simulated roster moves from combinations found in real games, the more its result depends on assumptions about interaction, adaptation, and independence.
 
-Before optimizing hypothetical lineups, the engine should reproduce known 2025 baseball.
+### Neutrality is a choice, not a discovered fact
 
-Actual team rosters and batting orders would be simulated using the same event and advancement logic. The model should be compared with observed team results for:
+There is no naturally occurring neutral baseball environment.
 
-- Runs per game
-- Plate appearances per game
-- Singles, doubles, triples, and home runs
-- Walk and strikeout rates
-- Stolen-base attempts and success
-- Double plays
-- Outs on the bases
-- Runners left on base
-- The distribution of runs per inning and per game
+A league-average collection of parks and opponents answers a different question from one standardized park. Preserving the 2025 pitcher distribution answers a different question from facing one league-average pitcher. Allowing opponent optimization answers a different question from holding the pitch distribution fixed.
 
-Agreement in league-average runs is not enough. A model could reach the correct mean by producing too many scoreless innings and too many extreme innings. The shape of the distribution matters.
+The study should report results across several clearly defined environments rather than treating one definition of neutral as uniquely correct.
 
-Sensitivity tests should then remove or simplify one component at a time:
+### The practical study must approximate the ideal
 
-- Replace all baserunners with league-average runners.
-- Remove stolen bases.
-- Replace player-specific advancement with fixed league rates.
-- Use deterministic advancement like the original OERA.
-- Remove handedness splits.
-- Replace detailed outs with one generic out.
+A feasible implementation would therefore use observed 2025 event data, public Statcast and Retrosheet information, statistical shrinkage for sparse events, player-specific running wherever the data support it, and league-level transitions where they do not.
 
-The changes in rankings and run estimates would reveal which assumptions materially affect the answer.
+It would use an efficient search to identify leading rosters, then apply much larger simulations to the finalists. It would report sensitivity analyses and a near-optimal group rather than one falsely precise answer.
+
+The limitations do not make the simulation useless. They determine how narrowly its result should be interpreted.
 
 ## My Hypothesis
 
@@ -518,7 +572,11 @@ The history also shows how easily precision can exceed realism.
 
 A simulation may evaluate hundreds of thousands of lineups while assuming that every runner advances identically. It may include stolen bases while ignoring first-to-third decisions. It may identify one order as "optimal" even though several alternatives are statistically indistinguishable. It may reproduce average league scoring while generating the wrong kinds of innings.
 
-A stronger model would remember the identity of every runner, separate opportunities from decisions and outcomes, use the same neutral environment for every lineup, and validate both average scoring and its distribution.
+A theoretically complete study would go further. It would generate pitches, swing decisions, contact, batted balls, fielding, throws, and runner movement from their underlying processes. It would preserve the identity and physical state of every participant, allow the opponent to adjust, and evaluate every possible roster and order in the same neutral environment.
+
+That target also clarifies the limits of a practical simulation. We do not observe every runner's lead, every fielder's read, every coaching decision, or every outcome that would have occurred on a play that was never attempted. We cannot directly validate nine copies of one hitter, and no definition of a neutral environment is uniquely correct.
+
+Those limitations should narrow the interpretation of the eventual result without replacing the ideal question with an easier one.
 
 Only then should it answer the two central questions:
 

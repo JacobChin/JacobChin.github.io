@@ -132,7 +132,7 @@ The research has not yet established:
 
 These unanswered questions require a study that measures the entire pitch-to-contact sequence.
 
-## Theoretical Ideal Study {:#the-theoretically-best-study}
+## Theoretical Ideal Study
 
 Assume that cost, technology, access, and processing power are not constraints. The ideal study would record every relevant feature of the pitch, hitter, visual system, swing, and collision with perfect accuracy and without interfering with the hitter’s natural behavior.
 
@@ -205,7 +205,7 @@ It would test both direct and indirect relationships. For example, head movement
 
 The final result would be an individualized response curve rather than a single rule. It would estimate how much head translation a particular hitter can accommodate, when that translation becomes disruptive, and how repeatable the movement must be for that hitter to maintain accurate contact.
 
-## Limitations {:#what-limits-the-theoretical-study}
+## Limitations
 
 Even this theoretical study would have limitations.
 

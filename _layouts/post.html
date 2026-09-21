@@ -11,7 +11,27 @@ layout: default
         <span>By {{ page.author }}</span><span>{{ page.read_time }}</span><span>{{ page.display_date }}</span>
       </div>
     </div>
-    {% if page.hero == "swing-timing" %}
+    {% if page.hero == "lineup-simulation" %}
+    <figure class="motion-card lineup-simulation-card" aria-labelledby="motion-caption">
+      <div class="motion-label"><span>Working model</span><span>9 hitters → 27 outs</span></div>
+      <div class="motion-plot" aria-hidden="true">
+        <span class="plot-phase lineup-phase-reach">Reach</span>
+        <span class="plot-phase lineup-phase-advance">Advance</span>
+        <span class="plot-phase lineup-phase-score">Score</span>
+        <svg viewBox="0 0 640 270" role="img">
+          <path class="base-diamond" d="M320 225 L470 140 L320 55 L170 140 Z" />
+          <path class="lineup-path" d="M80 224 C150 224 190 207 234 180 C272 156 292 122 320 55" />
+          <path class="runner-path" d="M320 225 L470 140 L320 55 L170 140 L320 225" />
+          <circle class="hitter-dot" cx="80" cy="224" r="8" />
+          <circle class="runner-dot" cx="470" cy="140" r="8" />
+          <circle class="runner-dot" cx="320" cy="55" r="8" />
+          <circle class="run-dot" cx="320" cy="225" r="10" />
+        </svg>
+        <div class="plot-key"><span><i class="key-hit"></i>Reach base</span><span><i class="key-runner"></i>Runner advancement</span><span><i class="key-run"></i>Run</span></div>
+      </div>
+      <figcaption id="motion-caption">A useful simulation must preserve who is hitting, who is running, and how each event changes the remaining 27 outs.</figcaption>
+    </figure>
+    {% elsif page.hero == "swing-timing" %}
     <figure class="motion-card swing-timing-card" aria-labelledby="motion-caption">
       <div class="motion-label"><span>Working model</span><span>Onset → contact</span></div>
       <div class="motion-plot" aria-hidden="true">
@@ -57,7 +77,8 @@ layout: default
     <span>In this note</span>
     <a href="#the-question">Question</a>
     <a href="#what-current-research-says">Research</a>
-    <a href="#a-better-study">Study</a>
+    <a href="#the-theoretically-best-study">Ideal study</a>
+    <a href="#what-limits-the-theoretical-study">Limitations</a>
     <a href="#my-hypothesis">Hypothesis</a>
     <a href="#conclusion">Conclusion</a>
   </nav>
@@ -66,5 +87,3 @@ layout: default
     {{ content }}
   </div>
 </article>
-
-

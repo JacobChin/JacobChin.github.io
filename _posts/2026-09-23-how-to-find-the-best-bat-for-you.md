@@ -54,7 +54,7 @@ $$
 I = \int r^2\,dm
 $$
 
-where \(I\) is moment of inertia, \(dm\) is a small element of mass, and \(r\) is its distance from the axis. Moving the same amount of mass farther from the hands can therefore raise MOI substantially.
+where \\(I\\) is moment of inertia, \\(dm\\) is a small element of mass, and \\(r\\) is its distance from the axis. Moving the same amount of mass farther from the hands can therefore raise MOI substantially.
 
 This is why the label on the knob is incomplete. A lighter, end-loaded bat can have a higher swing weight than a heavier bat whose mass is concentrated closer to the hands.
 
@@ -76,9 +76,9 @@ $$
 \omega \propto I^{-n}
 $$
 
-where \(\omega\) is angular swing speed, \(I\) is bat MOI, and \(n\) describes how sensitive the hitter's swing speed is to increasing MOI.
+where \\(\omega\\) is angular swing speed, \\(I\\) is bat MOI, and \\(n\\) describes how sensitive the hitter's swing speed is to increasing MOI.
 
-The pooled result was approximately \(n=0.25\), while the player-level values ranged from about 0.08 to 0.37. A hitter near the low end retained speed relatively well as MOI increased. A hitter near the high end lost speed more quickly.
+The pooled result was approximately \\(n=0.25\\), while the player-level values ranged from about 0.08 to 0.37. A hitter near the low end retained speed relatively well as MOI increased. A hitter near the high end lost speed more quickly.
 
 That range may be more important than the average. It suggests that a universal swing-weight recommendation would ignore meaningful differences among hitters.
 
@@ -86,13 +86,13 @@ The study was performed with slow-pitch softball players, not baseball hitters. 
 
 [Smith, Broker, and Nathan, 2003](https://baseball.physics.illinois.edu/SwingSpeed.pdf){: .source-link }
 
-Later work using 19 baseball players hitting machine-pitched balls found an exponent of \(0.29 \pm 0.04\) for angular speed versus MOI about the knob. That study also estimated the instantaneous rotation axis near the hands shortly before impact and developed a model in which linear bat speed depends on both rotational speed and the distance from the rotation axis to the impact point.
+Later work using 19 baseball players hitting machine-pitched balls found an exponent of \\(0.29 \pm 0.04\\) for angular speed versus MOI about the knob. That study also estimated the instantaneous rotation axis near the hands shortly before impact and developed a model in which linear bat speed depends on both rotational speed and the distance from the rotation axis to the impact point.
 
 [Nathan et al., 2011](https://www.acs.psu.edu/drussell/Publications/NathanCrisco-SportsEng.pdf){: .source-link }
 
 ### The MOI–speed result has been repeated, but not under one universal protocol
 
-The Smith–Broker–Nathan power law is the most convenient result for this article because it produces a hitter-specific sensitivity term, \(n\). It is not the only evidence that bat inertia changes swing speed.
+The Smith–Broker–Nathan power law is the most convenient result for this article because it produces a hitter-specific sensitivity term, \\(n\\). It is not the only evidence that bat inertia changes swing speed.
 
 Fleisig and colleagues used three-dimensional motion tracking to study baseball and fast-pitch softball hitters swinging bats with different mass properties. Bat linear velocity was related to MOI in both groups, leading the authors to argue that MOI was more useful than total mass when the goal was to regulate bat velocity.
 
@@ -104,13 +104,13 @@ That variation matters here. A laboratory relationship between MOI and maximum-e
 
 [Koenig et al., 2004](https://people.stfx.ca/smackenz/courses/directedstudy/articles/koenig%202004%20the%20influence%20of%20moment%20of%20inertia%20on%20baseball%20and%20softball%20bat%20swing%20speed.pdf){: .source-link }
 
-Smith and Kensrud later conducted a larger slow-pitch field study with 29 right-handed hitters. All five bats used the same 34-inch aluminum shell and were nearly equal in weight; inertia was changed by moving mass between the proximal and distal ends. Hitters faced a live pitcher and swung the bats in randomized order. The fitted power was \(n=0.21\) across all five bats and \(n=0.24\) after removing the unusually low-inertia bat.
+Smith and Kensrud later conducted a larger slow-pitch field study with 29 right-handed hitters. All five bats used the same 34-inch aluminum shell and were nearly equal in weight; inertia was changed by moving mass between the proximal and distal ends. Hitters faced a live pitcher and swung the bats in randomized order. The fitted power was \\(n=0.21\\) across all five bats and \\(n=0.24\\) after removing the unusually low-inertia bat.
 
 That study is especially relevant to bat fitting because it used matched bats in randomized order and showed that the fitted exponent changed when the unusually low-inertia condition was excluded. It also provides a warning: the power law is a convenient local description, not a complete biomechanical model. It incorrectly predicts unbounded swing speed as bat MOI approaches zero because it omits the inertia of the hitter and the rest of the linked system.
 
 [Smith and Kensrud, 2014](https://baseball.physics.illinois.edu/WSU-SwingSpeed.pdf){: .source-link }
 
-Taken together, these studies establish the direction of the relationship more confidently than they establish one universal exponent. They used baseball and softball hitters, tee and pitched-ball tasks, different bat constructions, different assumed axes, and different definitions of the measured point on the bat. Those differences are not noise to ignore. They are reasons to estimate \(n\) for the actual hitter and tested range rather than importing a population average into a fitting decision.
+Taken together, these studies establish the direction of the relationship more confidently than they establish one universal exponent. They used baseball and softball hitters, tee and pitched-ball tasks, different bat constructions, different assumed axes, and different definitions of the measured point on the bat. Those differences are not noise to ignore. They are reasons to estimate \\(n\\) for the actual hitter and tested range rather than importing a population average into a fitting decision.
 
 ### Mass placement can change swing organization and timing
 
@@ -124,7 +124,7 @@ This does not show that a handle-weighted bat is better. It shows that adding ma
 
 Crisco, Osvalds, and Rainbow examined 306 swings from 22 male players aged 13–18 using three youth bats with different MOIs. Their inverse-dynamics analysis found that peak force increased with larger bat MOI and was strongly related to bat-tip speed. The force applied through most of the swing was dominated by a component along the bat's long axis, while the applied moment rose sharply only near impact.
 
-The practical lesson is that a swing is not generated by one constant torque acting on a rigid lever. The hitter's forces, hand motion, segment coordination, and late rotational action all contribute. That is another reason a fitted \(n\) should be treated as an empirical response, not a complete explanation of the hitter.
+The practical lesson is that a swing is not generated by one constant torque acting on a rigid lever. The hitter's forces, hand motion, segment coordination, and late rotational action all contribute. That is another reason a fitted \\(n\\) should be treated as an empirical response, not a complete explanation of the hitter.
 
 [Crisco, Osvalds, and Rainbow, 2018](https://pubmed.ncbi.nlm.nih.gov/29651903/){: .source-link }
 
@@ -152,7 +152,7 @@ $$
 v = \omega r
 $$
 
-where \(v\) is linear speed at the impact point, \(\omega\) is angular velocity, and \(r\) is the distance from the rotation axis to that point.
+where \\(v\\) is linear speed at the impact point, \\(\omega\\) is angular velocity, and \\(r\\) is the distance from the rotation axis to that point.
 
 If two bats could be swung with the same angular velocity and contacted the ball at different radii, the longer radius would have the greater linear speed. That is the theoretical appeal of a longer bat whose MOI can be kept manageable.
 
@@ -210,7 +210,7 @@ That distinction shapes the proposed study. Commercial sensors may be useful for
 
 The existing research determines what the next study must do.
 
-- Because repeated studies show a general MOI–speed relationship but not one universal exponent, the study must estimate \(n\) separately for each hitter.
+- Because repeated studies show a general MOI–speed relationship but not one universal exponent, the study must estimate \\(n\\) separately for each hitter.
 - Because collision efficiency changes with MOI, construction, and impact location, those bat properties must be measured rather than inferred from exit velocity.
 - Because pitched-ball tasks are slower and more variable than tee swings, the test must include pitch uncertainty rather than treating maximum-effort tee speed as barrel control.
 - Because spatial and temporal contact errors are different, the study must measure both instead of using one subjective control grade.
@@ -255,7 +255,7 @@ Every swing should retain both the process and the outcome. A high-MOI bat that 
 
 ### Analysis
 
-Estimate \(n\) separately for each hitter using the bat-speed and MOI conditions. Then model both batted-ball speed and barrel control as functions of at least:
+Estimate \\(n\\) separately for each hitter using the bat-speed and MOI conditions. Then model both batted-ball speed and barrel control as functions of at least:
 
 - Hitter.
 - Bat MOI.
@@ -279,7 +279,7 @@ The research reviewed here supports the components of the fitting problem more s
 
 - No cited study directly maps a hitter's MOI sensitivity to that hitter's exit-velocity/barrel-control tradeoff across a controlled series of bats.
 - Several of the strongest MOI studies used slow-pitch softball players, youth players, or small collegiate samples. Their exact estimates should not be assigned automatically to other populations.
-- The power-law exponent \(n\) is a convenient description over a tested MOI range, not a law that should be extrapolated toward unrealistically light or heavy bats.
+- The power-law exponent \\(n\\) is a convenient description over a tested MOI range, not a law that should be extrapolated toward unrealistically light or heavy bats.
 - *Barrel control* has no single accepted outcome. Impact-location error, timing error, swing-and-miss rate, foul rate, and squared-up contact describe related but different abilities.
 - A Pareto frontier can show the available tradeoffs, but recommending one bat still requires a stated decision rule about how much control loss is acceptable for a possible gain in batted-ball speed.
 - A pitching-machine study would improve experimental control while remaining less perceptually representative than facing live pitchers with realistic release cues and pitch sequencing.
@@ -294,11 +294,11 @@ The framework also assumes that the fitting objective is a tradeoff between exit
 
 This article advances one hypothesis:
 
-> **Hitters who retain bat speed as MOI increases—those with a lower MOI-sensitivity exponent \(n\)—will achieve their best exit-velocity/barrel-control tradeoff at a higher bat MOI than hitters whose bat speed declines more rapidly.**
+> **Hitters who retain bat speed as MOI increases—those with a lower MOI-sensitivity exponent \\(n\\)—will achieve their best exit-velocity/barrel-control tradeoff at a higher bat MOI than hitters whose bat speed declines more rapidly.**
 
 This hypothesis does not assume that one MOI is best for every hitter. It predicts a relationship between two individualized measurements: the rate at which a hitter loses bat speed as MOI rises, and the MOI region where that hitter's batted-ball speed and barrel-control outcomes are jointly strongest.
 
-Testing the hypothesis requires estimating \(n\) for each hitter and then independently mapping that hitter's batted-ball-speed and barrel-control outcomes across the bat conditions. The evidence would support the hypothesis if lower-\(n\) hitters consistently reached their best tradeoff at higher MOIs than higher-\(n\) hitters. It would weaken the hypothesis if \(n\) did not predict that region.
+Testing the hypothesis requires estimating \\(n\\) for each hitter and then independently mapping that hitter's batted-ball-speed and barrel-control outcomes across the bat conditions. The evidence would support the hypothesis if lower-\\(n\\) hitters consistently reached their best tradeoff at higher MOIs than higher-\\(n\\) hitters. It would weaken the hypothesis if \\(n\\) did not predict that region.
 
 Bat length, choking up, puck knobs, and barrel mass redistribution remain possible mechanisms or design variables. They are not additional hypotheses in this article.
 

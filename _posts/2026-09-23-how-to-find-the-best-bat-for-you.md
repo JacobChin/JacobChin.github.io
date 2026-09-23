@@ -16,13 +16,11 @@ permalink: /articles/how-to-find-the-best-bat-for-you/
 
 In [“Is Bat Speed Missing Something?”](https://jacobchin.github.io/Baseball-Projects/bat-speed-moi/), I argued that a public bat-speed reading is not an equipment-neutral description of a hitter. It tells us how fast a point on a particular bat moved, but not how difficult that bat was to accelerate or how its mass distribution affected the collision.
 
-That analysis used Statcast data to study the relationship between bat speed and top-end exit velocity. It also showed where public data stop helping. Without measuring the bat itself—its length, mass, balance point, moment of inertia, and barrel properties—an unusual exit velocity cannot be assigned to equipment rather than impact quality, swing mechanics, or measurement noise.
+That analysis used Statcast data to study the relationship between bat speed and top-end exit velocity. It also showed where public data stopped being sufficient. Without measuring the bat itself—its length, mass, balance point, moment of inertia, and barrel properties—an unusual exit velocity cannot be assigned to equipment rather than impact quality, swing mechanics, or measurement noise.
 
 This article starts where that one ended: **what would an evidence-based bat-fitting process actually need to measure?**
 
 The goal is to turn a broad critique of bat-speed leaderboards into an individualized fitting question, then use the existing literature to design the study that could answer it.
-
-For readers interested in the exploratory measurement attempt that preceded this review, I documented the three-bat pendulum and tee test in a separate [technical note (PDF)](https://jacobchin.github.io/Baseball-Projects/bat-speed-moi/exploratory-three-bat-moi-swing-speed-pilot.pdf){: .source-link }. Because those measurements were not laboratory-grade, I do not use that pilot as evidence for the hypothesis developed here.
 
 > **Working question**
 >
@@ -89,6 +87,8 @@ The study was performed with slow-pitch softball players, not baseball hitters. 
 Later work using 19 baseball players hitting machine-pitched balls found an exponent of \\(0.29 \pm 0.04\\) for angular speed versus MOI about the knob. That study also estimated the instantaneous rotation axis near the hands shortly before impact and developed a model in which linear bat speed depends on both rotational speed and the distance from the rotation axis to the impact point.
 
 [Nathan et al., 2011](https://www.acs.psu.edu/drussell/Publications/NathanCrisco-SportsEng.pdf){: .source-link }
+
+I tried a small version of this myself with a three-bat pendulum and tee pilot study. For readers interested in that exploratory measurement attempt, I documented it in a separate [**technical note (PDF)**](https://jacobchin.github.io/Baseball-Projects/bat-speed-moi/exploratory-three-bat-moi-swing-speed-pilot.pdf){: .source-link }. Because my measurements were not laboratory-grade, I do not use the pilot as evidence for the hypothesis developed here.
 
 ### The MOI–speed result has been repeated, but not under one universal protocol
 

@@ -89,10 +89,10 @@ h1 { max-width: 900px; margin: 0; font-size: clamp(50px, 7vw, 104px); line-heigh
 .swing-timing-card .key-contact { width: 8px; height: 8px; border: 1px solid var(--ink); border-radius: 50%; background: var(--lime); }
 .swing-phase-onset { left: 5%; }
 .lineup-simulation-card .motion-plot { display: grid; align-content: center; gap: 17px; padding: 24px 20px 18px; }
-.lineup-experiment { display: grid; grid-template-columns: minmax(112px, 1fr) minmax(112px, 1.15fr) 64px minmax(92px, .75fr); align-items: center; gap: 14px; }
+.lineup-experiment { display: grid; grid-template-columns: minmax(140px, 1fr) minmax(150px, 1.25fr); align-items: center; gap: 28px; padding: 4px 18px; }
 .experiment-copy { display: grid; grid-template-columns: auto 1fr; column-gap: 9px; align-items: baseline; }
 .experiment-copy > span { grid-row: 1 / 3; color: var(--rust); font: 700 10px/1 var(--mono); }
-.experiment-copy strong, .experiment-copy small, .experiment-arrow, .experiment-output { text-transform: uppercase; letter-spacing: .06em; }
+.experiment-copy strong, .experiment-copy small { text-transform: uppercase; letter-spacing: .06em; }
 .experiment-copy strong { font: 700 11px/1.15 var(--mono); }
 .experiment-copy small { margin-top: 6px; color: var(--muted); font: 600 8px/1.2 var(--mono); }
 .lineup-tokens { display: grid; grid-template-columns: repeat(5, 23px); justify-content: center; gap: 7px; }
@@ -101,11 +101,6 @@ h1 { max-width: 900px; margin: 0; font-size: clamp(50px, 7vw, 104px); line-heigh
 .unique-tokens i:nth-child(3n + 1) { background: var(--field); }
 .unique-tokens i:nth-child(3n + 2) { background: var(--rust); }
 .unique-tokens i:nth-child(3n) { background: #778534; }
-.experiment-arrow { display: grid; justify-items: center; gap: 5px; color: var(--rust); font: 700 24px/1 var(--mono); }
-.experiment-arrow span { color: var(--muted); font: 600 7px/1 var(--mono); }
-.experiment-output { padding: 13px 10px; border: 1px solid var(--rust); text-align: center; }
-.experiment-output strong { display: block; color: var(--rust); font: 750 14px/1 var(--mono); }
-.experiment-output span { display: block; margin-top: 6px; color: var(--muted); font: 600 7px/1 var(--mono); }
 .experiment-divider { height: 1px; background: #bdb7aa; }
 .experiment-note { padding-top: 2px; color: var(--muted); text-align: center; font: 650 8px/1.2 var(--mono); text-transform: uppercase; letter-spacing: .07em; }
 .bat-fitting-card .fit-axis { fill: none; stroke: #737d77; stroke-width: 2; }
@@ -171,10 +166,8 @@ h1 { max-width: 900px; margin: 0; font-size: clamp(50px, 7vw, 104px); line-heigh
   .motion-plot { min-height: 240px; }
   .motion-plot svg { height: 180px; }
   .lineup-simulation-card .motion-plot { gap: 14px; padding: 20px 14px 16px; }
-  .lineup-experiment { grid-template-columns: minmax(0, 1fr) 92px; gap: 10px 12px; }
-  .lineup-tokens { grid-column: 1; justify-content: start; }
-  .experiment-arrow { display: none; }
-  .experiment-output { grid-column: 2; grid-row: 1 / 3; }
+  .lineup-experiment { grid-template-columns: 1fr; gap: 12px; padding: 3px 8px; }
+  .lineup-tokens { justify-content: start; margin-left: 26px; }
   .plot-key { flex-direction: column; align-items: flex-start; }
   .article-meta span + span::before { display: none; }
   .article-nav { gap: 18px; padding: 15px 20px; }

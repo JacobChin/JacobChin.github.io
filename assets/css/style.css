@@ -127,6 +127,8 @@ h1 { max-width: 900px; margin: 0; font-size: clamp(50px, 7vw, 104px); line-heigh
 .article-body blockquote p { margin: 0; font-family: var(--sans); font-size: clamp(19px, 2vw, 27px); line-height: 1.42; letter-spacing: -.025em; }
 .article-body a { text-underline-offset: 4px; text-decoration-thickness: 1px; }
 .article-body .source-link { display: inline-block; margin-top: 2px; color: var(--rust); font: 650 11px/1.5 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
+.article-body mjx-container { color: var(--ink); }
+.article-body mjx-container[display="true"] { margin: 38px 0 !important; padding: 24px clamp(18px, 4vw, 38px); border-left: 4px solid var(--rust); overflow-x: auto; overflow-y: hidden; background: var(--cream); text-align: center; }
 .article-body > p:last-child { margin-top: 70px; padding: 24px 28px; background: var(--field); color: #fffaf2; }
 
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 32px clamp(24px, 5vw, 72px); background: #102c22; color: #d9ded5; }

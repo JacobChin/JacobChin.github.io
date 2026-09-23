@@ -13,23 +13,36 @@ layout: default
     </div>
     {% if page.hero == "lineup-simulation" %}
     <figure class="motion-card lineup-simulation-card" aria-labelledby="motion-caption">
-      <div class="motion-label"><span>Working model</span><span>9 hitters → 27 outs</span></div>
+      <div class="motion-label"><span>Simulation design</span><span>One scoring rule</span></div>
       <div class="motion-plot" aria-hidden="true">
-        <span class="plot-phase lineup-phase-reach">Reach</span>
-        <span class="plot-phase lineup-phase-advance">Advance</span>
-        <span class="plot-phase lineup-phase-score">Score</span>
-        <svg viewBox="0 0 640 270" role="img">
-          <path class="base-diamond" d="M320 225 L470 140 L320 55 L170 140 Z" />
-          <path class="lineup-path" d="M80 224 C150 224 190 207 234 180 C272 156 292 122 320 55" />
-          <path class="runner-path" d="M320 225 L470 140 L320 55 L170 140 L320 225" />
-          <circle class="hitter-dot" cx="80" cy="224" r="8" />
-          <circle class="runner-dot" cx="470" cy="140" r="8" />
-          <circle class="runner-dot" cx="320" cy="55" r="8" />
-          <circle class="run-dot" cx="320" cy="225" r="10" />
-        </svg>
-        <div class="plot-key"><span><i class="key-hit"></i>Reach base</span><span><i class="key-runner"></i>Runner advancement</span><span><i class="key-run"></i>Run</span></div>
+        <div class="lineup-experiment">
+          <div class="experiment-copy">
+            <span>01</span>
+            <strong>Clone lineup</strong>
+            <small>Same hitter × 9</small>
+          </div>
+          <div class="lineup-tokens clone-tokens">
+            <i>A</i><i>A</i><i>A</i><i>A</i><i>A</i><i>A</i><i>A</i><i>A</i><i>A</i>
+          </div>
+          <div class="experiment-arrow"><span>Simulate</span>→</div>
+          <div class="experiment-output"><strong>Runs</strong><span>per 27 outs</span></div>
+        </div>
+        <div class="experiment-divider"></div>
+        <div class="lineup-experiment">
+          <div class="experiment-copy">
+            <span>02</span>
+            <strong>Unique lineup</strong>
+            <small>Nine different hitters</small>
+          </div>
+          <div class="lineup-tokens unique-tokens">
+            <i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i>
+          </div>
+          <div class="experiment-arrow"><span>Simulate</span>→</div>
+          <div class="experiment-output"><strong>Runs</strong><span>per 27 outs</span></div>
+        </div>
+        <div class="experiment-note">Hold the environment constant. Compare run production.</div>
       </div>
-      <figcaption id="motion-caption">A useful simulation must preserve who is hitting, who is running, and how each event changes the remaining 27 outs.</figcaption>
+      <figcaption id="motion-caption">Two questions, one measure: which repeated hitter and which nine-player lineup produce the most runs before making 27 outs?</figcaption>
     </figure>
     {% elsif page.hero == "bat-fitting" %}
     <figure class="motion-card bat-fitting-card" aria-labelledby="motion-caption">

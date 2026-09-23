@@ -18,6 +18,15 @@
     <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
     <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
     <meta name="twitter:image" content="{{ '/assets/og-v2.png' | absolute_url }}">
+    {% if page.math %}
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [['\\(', '\\)']], displayMath: [['$$', '$$']] },
+        options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    {% endif %}
   </head>
   <body id="top">
     <a class="skip-link" href="#main-content">Skip to content</a>

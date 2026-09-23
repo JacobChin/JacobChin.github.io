@@ -31,6 +31,27 @@ layout: default
       </div>
       <figcaption id="motion-caption">A useful simulation must preserve who is hitting, who is running, and how each event changes the remaining 27 outs.</figcaption>
     </figure>
+    {% elsif page.hero == "bat-fitting" %}
+    <figure class="motion-card bat-fitting-card" aria-labelledby="motion-caption">
+      <div class="motion-label"><span>Fitting objective</span><span>Contact quality × control</span></div>
+      <div class="motion-plot" aria-hidden="true">
+        <svg viewBox="0 0 640 270" role="img" aria-label="Candidate bats plotted by barrel control and exit velocity, with the balanced option highlighted">
+          <path class="fit-axis" d="M72 220 H590 M72 220 V25" />
+          <path class="fit-frontier" d="M185 72 C280 76 337 95 392 126 C448 158 493 181 550 191" />
+          <circle class="fit-candidate" cx="195" cy="75" r="9" />
+          <circle class="fit-candidate fit-selected-halo" cx="365" cy="110" r="18" />
+          <circle class="fit-selected" cx="365" cy="110" r="10" />
+          <circle class="fit-candidate" cx="530" cy="184" r="9" />
+          <text class="fit-label" x="173" y="56">Higher MOI</text>
+          <text class="fit-label fit-label-selected" x="342" y="86">Best fit</text>
+          <text class="fit-label" x="498" y="166">Lower MOI</text>
+          <text class="fit-axis-label" x="430" y="252">Barrel control →</text>
+          <text class="fit-axis-label fit-y-label" x="20" y="135">Exit velocity →</text>
+        </svg>
+        <div class="plot-key"><span><i class="key-candidate"></i>Candidate bat</span><span><i class="key-fit"></i>Best joint outcome</span></div>
+      </div>
+      <figcaption id="motion-caption">The best bat is not necessarily the one at either extreme. Fitting asks which option preserves the strongest contact while maintaining usable barrel control.</figcaption>
+    </figure>
     {% elsif page.hero == "swing-timing" %}
     <figure class="motion-card swing-timing-card" aria-labelledby="motion-caption">
       <div class="motion-label"><span>Working model</span><span>Onset → contact</span></div>

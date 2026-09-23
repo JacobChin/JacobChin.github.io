@@ -98,6 +98,17 @@ h1 { max-width: 900px; margin: 0; font-size: clamp(50px, 7vw, 104px); line-heigh
 .lineup-simulation-card .key-runner { background: var(--rust); }
 .lineup-simulation-card .key-run { width: 8px; height: 8px; border: 1px solid var(--ink); border-radius: 50%; background: var(--lime); }
 .lineup-phase-reach { left: 5%; }.lineup-phase-advance { left: 43%; }.lineup-phase-score { right: 5%; }
+.bat-fitting-card .fit-axis { fill: none; stroke: #737d77; stroke-width: 2; }
+.bat-fitting-card .fit-frontier { fill: none; stroke: var(--rust); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 8 7; }
+.bat-fitting-card .fit-candidate { fill: #f1ead9; stroke: var(--field); stroke-width: 4; }
+.bat-fitting-card .fit-selected-halo { fill: rgb(200 214 103 / 35%); stroke: none; }
+.bat-fitting-card .fit-selected { fill: var(--lime); stroke: var(--ink); stroke-width: 2; }
+.bat-fitting-card .fit-label, .bat-fitting-card .fit-axis-label { fill: #53605a; font: 650 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .04em; }
+.bat-fitting-card .fit-label-selected { fill: var(--rust); }
+.bat-fitting-card .fit-axis-label { font-size: 10px; }
+.bat-fitting-card .fit-y-label { transform: rotate(-90deg); transform-origin: 20px 135px; }
+.bat-fitting-card .key-candidate { height: 8px; width: 8px; border: 2px solid var(--field); border-radius: 50%; background: transparent; }
+.bat-fitting-card .key-fit { height: 8px; width: 8px; border: 1px solid var(--ink); border-radius: 50%; background: var(--lime); }
 .motion-card figcaption { padding: 14px 4px 3px; color: #4f5b56; font-size: 13px; line-height: 1.5; }
 .read-cue { position: absolute; left: clamp(24px, 7vw, 108px); bottom: 28px; color: #c2cec6; text-decoration: none; font: 650 10px/1.2 var(--mono); text-transform: uppercase; letter-spacing: .08em; }
 
